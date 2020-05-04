@@ -1,0 +1,260 @@
+/*h 버튼 css*/
+.button_h {
+    width: 74px;
+    height: 74px;
+    background-color: white;
+    position: fixed;
+    left: calc(50vw - 37px);
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_h_text {
+    width: 48px;
+    height: 48px;
+    color: #ea178c;
+    font-family: HugeGothic-Bold;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 54px;
+}
+
+.menu_wrap {
+    width: 1050px;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_wrap li {
+    width: 190px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu_wrap li a {
+    font-family: HugeGothic-Bold;
+    font-size: 36px;
+    color: black;
+    line-height: 36px;
+}
+
+.menu_wrap li a:hover {
+    color: #ea178c;
+    cursor: pointer;
+}
+
+.menu_wrap li p {
+    font-family: Galaxie;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 28px;
+    letter-spacing: -1px;
+}
+
+.menu_wrap div {
+    border-bottom: 1px solid black;
+    width: 48px;
+    height: 36px;
+}
+
+.gnb_aside {
+    width: 320px;
+    height: 22px;
+    position: absolute;
+    top: 350px;
+    left: calc(50vw - 160px);
+    display: flex;
+    justify-content: center;
+}
+
+.gnb_aside p {
+    font-family: Galaxie;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: -1px;
+}
+
+.gnb_aside a {
+    font-family: HugeGothic-Bold;
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 6px;
+    padding-top: 2px;
+}
+
+.gnb_aside a:hover {
+    color: #ea178c;
+    cursor: pointer;
+}
+
+.gnb_aside a span {
+    color: #ea178c;
+}
+
+/*common.css 요소*/
+.color_white {
+    color: white;
+}
+
+.hero {
+    width: 100vw;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    padding: 140px 0 60px;
+    box-sizing: border-box;
+}
+.hero_screen {
+    background-color:black;
+    opacity:0.15;
+}
+
+/*about_hero*/
+.hero_about {
+    background-image: url('../img/atl/SkateGIF-v3.gif');
+    background-position-x:0%;
+    background-position-y:0%;
+    position:relative;
+}
+.hero_subtitle {
+    width: 74.68354%;
+    margin: 0 auto;
+    font-family: HugeGothic-Bold;
+    font-size: 22px;
+    font-weight: 100;
+    color: white;
+    line-height: 22px;
+    letter-spacing: 1px;
+    display:flex;
+}
+.hero_subtitle div:nth-child(2) {
+    border-bottom: 2px solid white;
+    width: 136.969px;
+    height: 11px;
+    margin:0 22px;
+}
+.hero_title {
+    width: 74.68354%;
+    height: calc(80vh - 200px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 auto;
+}
+.hero_contact {
+    box-sizing:border-box;
+    display:flex;
+    width: 74.68354%;
+    margin: 0 auto;
+}
+.hero_contact p {
+    margin-right:50px;
+}
+
+/*the office*/
+.the_office {
+    width: 100%;
+    background-color: white;
+    padding: 140px 0;
+    box-sizing: border-box;
+}
+.the_office_container {
+    width: 74.68354%;
+    margin: 0 auto;
+    display: flex;
+}
+.section_subtitle {
+    min-width: 32.20339%;
+    padding-top: 14px;
+}
+.section_subtitle_rule_black {
+    width: 47.36842%;
+    margin-bottom: 20px;
+    border-top: 1px solid black;
+}
+.the_office_content {
+    width: 66.10169%;
+    margin-left: 1.69492%;
+}
+.the_office_text {
+    padding-bottom: 25px;
+}
+.the_office_text span {
+    text-decoration:underline;
+    font-weight:bolder;
+}
+
+/*gallery*/
+.gallery {
+    width:87.34177%;
+    display:flex;
+    flex-wrap:wrap;
+    box-sizing:border-box;
+    flex-direction:row;
+    justify-content:space-between;
+    margin-inline-end:101.906px;
+    margin-inline-start:101.906px;
+    margin-left:101.906px;
+    margin-right:101.906px;
+}
+.gallery li {
+    width:100%;
+    height:100%;
+    background-size:cover;
+    display:block;
+    box-sizing:border-box;
+    object-fit:cover;
+}
+
+
+/*holler*/
+.holler {
+    width: 100%;
+    background-color: white;
+    padding: 150px 0;
+    box-sizing: border-box;
+}
+.holler_container {
+    width: 74.68354%;
+    margin: 0 auto;
+}
+.holler_content {
+    width: 100%;
+    display: block;
+}
+.holler_title {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 56px;
+    line-height: 90.0003px;
+    letter-spacing: -3px;
+}
+.holler_text {
+    width: 100%;
+    margin-bottom: 60px;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: -0.5px;
+}
+.holler_button {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    font-family: HugeGothic-Bold;
+    font-size: 24px;
+    font-weight: 400;
+    height: 96px;
+    line-height: 30px;
+    padding: 30px 45px;
+}
+.holler_button:hover {
+    opacity: 0.5;
+    padding: 10px 45px 50px;
+}

@@ -1,0 +1,164 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Huge Inc Website">
+    <meta name="keywords" content="Design, Agency, Web, UI, UX">
+    <meta name="author" content="Hyerin">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <!--브라우저 css 초기화(초기화 css가 위에 있어야함)-->
+    <link rel="stylesheet" type="text/css" href="css/destyle.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap">
+
+    <style>
+        /* (header style_1 apple style)
+        header {position:fixed; z-index:100;}
+
+        h1 {font-family:HugeGothic-Bold, Arial, Helvetica, sans-serif; font-size:300px; letter-spacing:10px; color:black;}
+        section {width:100vw; height:100vh; display:flex; justify-content:center; align-items:center;}
+        .gnb {width:100vw; height:44px; background-color:rgba(0,0,0,0.7); display:flex; justify-content:space-between; padding:0 calc(50vw - 490px); box-sizing:border-box; align-items:center;}
+        .gnb a {font-family:HugeGothic-Bold, Arial, Helvetica, sans-serif; font-weight:100; font-size:14px;
+        letter-spacing:1px; color:white; line-height:44px; text-decoration:none;}
+        .gnb a:link {}
+
+        .gnb a:hover {color:#ea178c;}
+        .gnb a:active {color:#ea178c;}
+        .gnb a:visited {color:white;}
+
+        .logo_gnb {width:32px; height:32px; background-color:white; color:rgba(0,0,0,0.7); line-height:32px;
+        font-family: HugeGothic-Bold, Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; text-decoration:none; text-align:center;}
+        .logo_gnb:hover {background-color:#ea178c; color:white;}
+
+        #home_02 {background-image:url('img/hugeinc16.png'); background-size:cover;}
+        #home_02 > h1 {color:white; font-size:120px;}
+        */
+
+        /* (header style_2 네이버 회사소개 style_연습)
+        header {}
+        h1 {font-family:HugeGothic-Bold, Arial, Helvetica, sans-serif; font-size:300px; letter-spacing:10px;
+        color:black;}
+        section {width:100vw; height:100vh; display:flex; justify-content:center; align-items:center;}
+
+        .gnb {width:100vw; height:90px; background-color:rgba(0,0,0,0.7); display:flex; justify-content:space-between; box-sizing:border-box; align-items:center; padding: 0 4vw;}
+        .gnb a {font-family:HugeGothic-Bold, Arial, Helvetica, sans-serif; font-weight:100; font-size:14px;
+        letter-spacing:1px; color:white; line-height:90px; text-decoration:none;}
+        .gnb a:link {}
+        .gnb a:hover {color:#ea178c;}
+        .gnb a:active {color:#ea178c;}
+        .gnb a:visited {color:white;}
+
+        .logo_gnb {width:32px; height:32px; background-color:white; color:rgba(0,0,0,0.7); line-height:32px;
+        font-family: HugeGothic-Bold, Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold;
+        text-decoration:none; text-align:center;}
+        .logo_gnb:hover {background-color:#ea178c; color:white;}
+        .menu {width:660px; height:90px; display:flex; justify-content:space-between;}
+        .button {width:32px; height:32px; background-image:url('img/menubutton.png'); background-size:cover;}
+
+        #home_02 {background-image:url('img/hugeinc16.png'); background-size:cover;}
+        #home_02 > h1 {color:white; font-size:120px;}
+        */
+
+        header {width:100vw; height:72px; position:fixed; z-index:100; background-color:rgba(0,0,0,0.7); }
+
+        h1 {font-family:HugeGothic-Bold, Arial, Helvetica, sans-serif; font-size:300px; letter-spacing:10px; color:black;}
+        section {width:100vw; height:100vh; display:flex; justify-content:center; align-items:center;}
+        .gnb {width:100vw; height:72px; padding:0 calc(50vw - 770px); box-sizing:border-box; display:flex; justify-content:space-between; align-items:center;}
+        .gnb a {font-family:HugeGothic-Bold, Arial, Helvetica, sans-serif; font-weight:100; font-size:14px;
+        letter-spacing:1px; color:white; text-decoration:none;}
+        .gnb a:link {}
+
+        .gnb a:hover {color:#ea178c;}
+        .gnb a:active {color:#ea178c;}
+        .gnb a:visited {color:white;}
+
+        .logo_gnb {width:32px; height:32px; background-color:white; color:rgba(0,0,0,0.7); line-height:32px; font-family: HugeGothic-Bold, Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; text-decoration:none; text-align:center;}
+        .logo_gnb:hover {background-color:#ea178c; color:white;}
+
+        #home_02 {background-image:url('img/hugeinc16.png'); background-size:cover;}
+        #home_02 > h1 {color:white; font-size:120px;}
+        .gnb_left {width:90px; height:72px; display:flex; justify-content:flex-start; align-items:center;}
+        .gnb_center {width:600px; height:72px; display:flex; justify-content:space-between; align-items:center;  margin-left:0 auto;}
+        .gnb_right {width:200px; height:72px; display:flex; justify-content:flex-end; align-items:center;}
+    </style>
+</head>
+
+<body>
+    <!--header style_1 apple style-->
+    <!--
+    <header>
+        <nav class="gnb">
+            <div class="logo_gnb" href="index.html">H</div>
+            <a href="index.html">Hello.</a>
+            <a href="work.html">Work.</a>
+            <a href="about.html">About.</a>
+            <a href="careers.html">Careers.</a>
+            <a href="contact.html">Contact.</a>
+        </nav>
+    </header>
+    -->
+
+    <!--header style_2 네이버 회사소개 style_연습-->
+    <!--
+    <header>
+        <nav class="gnb">
+            <div class="logo_gnb" href="index.html">H</div>
+            <div class="menu">
+                <a href="index.html">Hello.</a>
+                <a href="work.html">Work.</a>
+                <a href="about.html">About.</a>
+                <a href="careers.html">Careers.</a>
+                <a href="contact.html">Contact.</a>
+            </div>
+            <div class="button"></div>
+        </nav>
+    </header>
+    -->
+
+    <!--header style_2 네이버 회사소개 style_같이-->
+    <header>
+        <nav class="gnb">
+            <div class="gnb_left">
+                <div class="logo_gnb" href="index.html">HUGE</div>
+            </div>
+
+            <div class="gnb_center">
+                <a href="index.html">Hello.</a>
+                <a href="work.html">Work.</a>
+                <a href="about.html">About.</a>
+                <a href="careers.html">Careers.</a>
+                <a href="contact.html">Contact.</a>
+            </div>
+
+            <div class="gnb_right">
+                <a href="work.html">KOR</a>
+                <a href="work.html">ENG</a>
+                <div>=</div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home_01">
+            <h1>HELLO</h1>
+        </section>
+        
+        <section id="home_02">
+            <h1>#FreeThePeriod.</h1>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

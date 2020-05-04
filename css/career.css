@@ -1,0 +1,340 @@
+/*h 버튼 css*/
+.button_h {
+    width: 74px;
+    height: 74px;
+    background-color: white;
+    position: fixed;
+    left: calc(50vw - 37px);
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_h_text {
+    width: 48px;
+    height: 48px;
+    color: #ea178c;
+    font-family: HugeGothic-Bold;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 54px;
+}
+
+.menu_wrap {
+    width: 1050px;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_wrap li {
+    width: 190px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu_wrap li a {
+    font-family: HugeGothic-Bold;
+    font-size: 36px;
+    color: black;
+    line-height: 36px;
+}
+
+.menu_wrap li a:hover {
+    color: #ea178c;
+    cursor: pointer;
+}
+
+.menu_wrap li p {
+    font-family: Galaxie;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 28px;
+    letter-spacing: -1px;
+}
+
+.menu_wrap div {
+    border-bottom: 1px solid black;
+    width: 48px;
+    height: 36px;
+}
+
+.gnb_aside {
+    width: 320px;
+    height: 22px;
+    position: absolute;
+    top: 350px;
+    left: calc(50vw - 160px);
+    display: flex;
+    justify-content: center;
+}
+
+.gnb_aside p {
+    font-family: Galaxie;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: -1px;
+}
+
+.gnb_aside a {
+    font-family: HugeGothic-Bold;
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 6px;
+    padding-top: 2px;
+}
+
+.gnb_aside a:hover {
+    color: #ea178c;
+    cursor: pointer;
+}
+
+.gnb_aside a span {
+    color: #ea178c;
+}
+
+/*common.css 요소*/
+.color_white {
+    color:white;
+}
+
+.hero_video {
+    width:100vw;
+    height:80vh;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.hero_video video {
+    min-width:100vw;
+    min-height:80vh;
+    border:none;
+    right:0;
+    bottom:0;
+    position:absolute;
+    background-size:cover;
+}
+/*careers_img css*/
+.careers_home {
+    width:100vw;
+    height:684.797px;
+    background-image:url('../img/careers/HugeInc_Recruting.png');
+    background-size:cover;
+    background-position-x:50%;
+    background-position-y:50%;
+    display:block;
+    position:relative;
+}
+.careers_home_wrap {
+    width:100%;
+}
+    .careers_home_wrap h2 {
+        width:74px;
+        height:74px;
+        background-color:rgba(234, 23, 140, 0.6);
+        color:white;
+        z-index:100;
+        position:absolute;
+        top:45vh;
+        left:50vw;
+        font-size:20px;
+        line-height:74px;
+        padding-left:30px;
+    }
+
+/*our commitment*/
+.our_commitment {
+    width:100%;
+    background-color:white;
+    padding:150px 0;
+    box-sizing:border-box;
+}
+.our_commitment_container {
+    width:74.68354%;
+    margin:0 auto;
+}
+.our_commitment_content {
+    width:100%;
+    display:block;
+}
+    .our_commitment_title {
+        width:100%;
+        margin-bottom:20px;
+        font-size:56px;
+        line-height:90.0003px;
+        letter-spacing:-3px;
+    }
+    .our_commitment_text {
+        width:100%;
+        margin-bottom:60px;
+        font-size:18px;
+        line-height:36px;
+        letter-spacing:-0.5px;
+    }
+.our_commitment_button {
+    background-color:black;
+    color:white;
+    display:inline-block;
+    font-family:HugeGothic-Bold;
+    font-size:24px;
+    font-weight:400;
+    height:96px;
+    line-height:30px;
+    padding:30px 45px;
+}
+.our_commitment_button:hover {
+    opacity:0.5;
+    padding:10px 45px 50px;
+}
+
+/*Why Huge?*/
+.why_huge {
+    width:100%;
+    background-color:white;
+    padding:140px 0;
+    box-sizing:border-box;
+}
+.why_huge_container {
+    width:74.68354%;
+    margin:0 auto;
+    display:flex;
+}
+.section_subtitle {
+    min-width:32.20339%;
+    padding-top:14px;
+}
+.section_subtitle_rule_black {
+    width:47.36842%;
+    margin-bottom:20px;
+    border-top:1px solid black;
+}
+.why_huge_content {
+    width:66.10169%;
+    margin-left:1.69492%;
+}
+.why_huge_title {
+    margin-bottom:70px;
+    font-size:74px;
+}
+.why_huge_text {
+    padding-bottom:25px;
+    font-size:24px;
+    letter-spacing:-0.5px;
+    line-height:36px;
+}
+
+/*5 ways*/
+.ways {
+    width:100%;
+    background-color:black;
+    padding:200px 0;
+    box-sizing:border-box;
+}
+.ways_container {
+    width:74.68354%;
+    margin:0 auto;
+    display:flex;
+}
+.section_subtitle_rule_white {
+    width: 47.36842%;
+    margin-bottom: 20px;
+    border-top:1px solid white;
+}
+.section_subtitle_nopadding {
+    width: 32.20339%;
+    margin-bottom:50px;
+}
+.section_subtitle_nopadding h6 {
+    font-family: HugeGothic-Bold;
+    font-size: 22px;
+    color: white;
+    line-height: 60px;
+}
+.ways_content {
+    width: 66.10169%;
+}
+.ways_content li {
+    width:100%;
+    margin-right:10.25641%;
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:80px;
+}
+.ways_content_left {
+    width:87.17949%;
+}
+    .ways_content_left h2 {
+        margin-bottom:10px;
+        box-sizing:border-box;
+        font-family:HugeGothic-Bold;
+        font-weight:400;
+        font-size:135px;
+        line-height:140px;
+        letter-spacing:-3px;
+    }
+    .ways_content_left p {
+        font-family:Galaxie;
+        font-size:24px;
+        line-height:36px;
+        letter-spacing:-0.5px;
+    } 
+.ways_content_right {
+    width:9.60938px;
+    font-family:Galaxie;
+    font-size:24px;
+    line-height:36px;
+    letter-spacing:-0.5px;
+}
+
+/*magenta*/
+.work_05 {
+    width:100vw;
+    background-image:url('../img/careers/frame_00_delay-0.1s.jpg');
+    background-size:cover;
+    position:relative;
+}
+.work_05 > div:first-child {
+    background-color:rgba(0,0,0,0.7);
+    padding:200px 0;
+}
+.work_05_wrap {
+    width:100%;
+    display:flex;
+    justify-content:flex-start;
+}
+.work_05_left {
+    width:18.98734%;
+    float:left;
+    display: inline-table;
+    background-image:url('../img/magenta-hero.gif');
+    background-size:cover;
+    margin-left:12.65823%;
+    margin-right:1.25%;
+    padding-bottom:18.98734%;
+}
+.work_05_right {
+    width:43.03797%;
+    margin-right:1.26582%;
+    margin-left:5.06329%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    color:white;
+}
+    .work_05_right h2 {
+        font-size:135px;
+        line-height:140px;
+        letter-spacing:-3px;
+    }
+    .work_05_right p {
+        font-family:Galaxie;
+        font-size:24px;
+        line-height:36px;
+        letter-spacing:-0.5px;
+    }

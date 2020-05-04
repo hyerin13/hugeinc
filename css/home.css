@@ -1,0 +1,587 @@
+/*font*/
+@font-face {
+    font-family: Galaxie;
+    src: url(../font/GalaxieCopernicus-Book.woff);
+}
+
+@font-face {
+    font-family: HugeGothic-Bold;
+    src: url(../font/HugeGothic-Bold.woff);
+}
+
+/*text*/
+.white {
+    color: white;
+}
+
+h1 {
+    font-family: HugeGothic-Bold;
+    font-size: 300px;
+    color: black;
+    font-weight: 600;
+}
+
+p {
+    font-family: Galaxie-Book;
+    font-size: 14px;
+    color: black;
+    font-weight: 100;
+}
+
+.width_100vw {
+    width: 100%;
+}
+.margin_auto {
+    margin: 0 auto;
+}
+.text_align_center {
+    text-align: center;
+}
+
+.margin_top_36 {
+    margin-top: 36px;
+}
+.margin_top_48 {
+    margin-top: 48px;
+}
+.margin_top_60 {
+    margin-top: 60px;
+}
+.margin_top_72 {
+    margin-top: 72px;
+}
+.margin_top_96 {
+    margin-top: 96px;
+}
+
+/*h버튼*/
+.button_h {
+    width:74px;
+    height:74px;
+    background-color:white;
+    position:fixed;
+    left:calc(50% - 37px);
+    top:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index: 200;
+}
+
+.button_h_text {
+    width:48px;
+    height:48px;
+    color:#ea178c;
+    font-family:HugeGothic-Bold;
+    font-size:36px;
+    font-weight:600;
+    text-align:center;
+    line-height:54px;
+}
+
+.menu_wrap {
+    width: 1050px;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_wrap li {
+    width: 190px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu_wrap li a {
+    font-family: HugeGothic-Bold;
+    font-size: 36px;
+    color: black;
+    line-height: 36px;
+}
+
+.menu_wrap li a:hover {
+    color: #ea178c;
+    cursor: pointer;
+}
+
+.menu_wrap li p {
+    font-family: Galaxie;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 28px;
+    letter-spacing: -1px;
+}
+
+.menu_wrap div {
+    border-bottom: 1px solid black;
+    width: 48px;
+    height: 36px;
+}
+
+.gnb_aside {
+    width: 320px;
+    height: 22px;
+    position: absolute;
+    top: 350px;
+    left: calc(50% - 160px);
+    display: flex;
+    justify-content: center;
+}
+
+.gnb_aside p {
+    font-family: Galaxie;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: -1px;
+}
+
+.gnb_aside a {
+    font-family: HugeGothic-Bold;
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 6px;
+    padding-top: 2px;
+}
+
+.gnb_aside a:hover {
+    color: #ea178c;
+    cursor: pointer;
+}
+
+.gnb_aside a span {
+    color: #ea178c;
+}
+
+/*content*/
+/* 뭔지 모르겠음,,
+.logo {
+    width: 60px;
+    font-family: HugeGothic-Bold;
+    font-size: 36px;
+    color: deeppink;
+    position: fixed;
+    top: 60;
+    left: 930px;
+}
+*/
+
+main {width:100%; transition:padding 0.6s;}
+
+.home_section {
+    width: 100%;
+    height: 100vh;
+    position:relative;
+}
+
+.home_section_wrap {
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.home_section_hello {
+    width:800px;
+    height:300px;
+    font-family:HugeGothic-Bold;
+    font-size:300px;
+    font-weight:600;
+    text-align:center;
+    line-height:300px;
+    padding-left:20px;
+}
+.home_section_hi {
+    width: 800px;
+    height: 300px;
+    font-family: HugeGothic-Bold;
+    font-size: 300px;
+    font-weight: 600;
+    text-align: center;
+    line-height:300px;
+    display:none;
+}
+.home_section_bottom {
+    width:100%;
+    height:90px;
+    position:absolute;
+    bottom:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.home_section_bottom_text {
+    height:40px;
+    font-family:Galaxie;
+    text-align:center;
+}
+
+.home_section_bottom_line {
+    border-left:1px solid black;
+    width:1px;
+    height:50px;
+}
+
+/*content_white text*/
+.home_01_wrap {
+    width:100%;
+    height:100vh;
+    box-sizing:border-box;
+    display:flex;
+    background-image:url('../img/index/hugeinc.png');
+    background-size:cover;
+}
+
+.home_01_index {
+    width:12.5%;
+    height:100vh;
+    padding-top:20vh;
+    box-sizing:border-box;
+}
+
+.home_01_index_wrap {
+    display:flex;
+    justify-content:flex-end;
+}
+
+    .home_01_index_wrap p {
+        font-family:HugeGothic-Bold;
+        font-size:22px;
+        font-weight:100;
+        line-height:22px;
+        color:white;
+        margin-right:15px;
+        letter-spacing:1px;
+    }
+
+    .home_01_index_wrap div {
+        border-bottom:1px solid white;
+        width:15%;
+        height:11px;
+    }
+
+.home_01_content { 
+    width:75%;
+    height:100vh;
+    padding-top:20vh;
+    box-sizing:border-box;
+    display:flex;
+    padding-left:15px;
+}
+
+.home_01_content_wrap {
+    width:45%;
+    height:60vh;
+}
+
+    .home_01_content_wrap div:first-child {
+        font-family:HugeGothic-Bold;
+        font-size:22px;
+        font-weight:100;
+        color:white;
+        line-height:22px;
+        letter-spacing:1px;
+    }
+
+.home_01_content_subwrap {
+    width:100%;
+    height:calc(100% - 22px);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+    .home_01_content_subwrap h2 {
+        font-family:HugeGothic-Bold;
+        font-size:72px;
+        font-weight:100;
+        color:white;
+    }
+
+    .home_01_content_subwrap div {
+        border-top:1px solid white;
+        width:15%;
+        margin:30px 0;
+    }
+
+    .home_01_content_subwrap p {
+        font-family:Galaxie;
+        font-size:18px;
+        line-height:28px;
+        width:85%;
+        color:white;
+    }
+
+/*content_black text*/
+    .home_02_index_wrap {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .home_02_index_wrap p {
+        font-family: HugeGothic-Bold;
+        font-size: 22px;
+        font-weight: 100;
+        line-height: 22px;
+        color: black;
+        margin-right: 15px;
+        letter-spacing: 1px;
+    }
+
+    .home_02_index_wrap div {
+        border-bottom: 1px solid black;
+        width: 15%;
+        height: 11px;
+    }
+
+.home_02_content_wrap {
+    width: 45%;
+    height: 60vh;
+}
+
+    .home_02_content_wrap div:first-child {
+        font-family: HugeGothic-Bold;
+        font-size: 22px;
+        font-weight: 100;
+        color: black;
+        line-height: 22px;
+        letter-spacing: 1px;
+    }
+
+.home_02_content_subwrap {
+    width: 100%;
+    height: calc(100% - 22px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+    .home_02_content_subwrap h2 {
+        font-family: HugeGothic-Bold;
+        font-size: 72px;
+        font-weight: 100;
+        color: black;
+    }
+
+    .home_02_content_subwrap div {
+        border-top: 1px solid black;
+        width: 15%;
+        margin: 30px 0;
+    }
+
+    .home_02_content_subwrap p {
+        font-family: Galaxie;
+        font-size: 18px;
+        color: black;
+        line-height: 28px;
+        width: 85%;
+    }
+
+.home_02_wrap {
+    width:100%;
+    height:100vh;
+    box-sizing:border-box;
+    display:flex;
+    background-image:url('../img/index/hugeinc16.png');
+    background-size:cover;
+}
+
+.home_section_03_wrap {
+    width:100%;
+    height:100vh;
+    box-sizing:border-box;
+    display:flex;
+    background-image:url('../img/index/hugeinc10.png');
+    background-size:cover;
+}
+
+.home_section_04_wrap {
+    width:100%;
+    height:100vh;
+    box-sizing:border-box;
+    display:flex;
+    background-image:url('../img/index/hugeinc12.png');
+    background-size:cover;
+}
+
+.home_section_05_wrap {
+    width:100%;
+    height:100vh;
+    box-sizing:border-box;
+    display:flex;
+    background-image:url('../img/index/hugeinc2.jpg');
+    background-size:cover;
+}
+
+.home_section_06_wrap {
+    width:100%;
+    height:100vh;
+    box-sizing:border-box;
+    display:flex;
+    background-image:url('../img/index/hugeinc3.jpg');
+    background-size:cover;
+}
+
+.home_section_07_wrap {
+    width:100%;
+    height:100vh;
+    box-sizing:border-box;
+    display:flex;
+    background-image:url('../img/index/hugeinc1.jpg');
+    background-size:cover;
+}
+
+@media screen and (max-width:480px) {
+
+    /*h버튼*/
+    .button_h {
+        width: 60px;
+        height: 60px;
+        top: 25px;
+        left: calc(50% - 30px);
+    }
+
+    .button_h_text {
+        font-size: 28px;
+        line-height: 60px;
+    }
+
+    /*h버튼 누르면 열리는 창*/
+    .menu_wrap {
+        width: 1050px;
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu_wrap li {
+        width: 190px;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu_wrap li a {
+        font-family: HugeGothic-Bold;
+        font-size: 36px;
+        color: black;
+        line-height: 36px;
+    }
+    .menu_wrap li a:hover {
+        color: #ea178c;
+        cursor: pointer;
+    }
+    .menu_wrap li p {
+        font-family: Galaxie;
+        font-size: 14px;
+        font-weight: 100;
+        line-height: 28px;
+        letter-spacing: -1px;
+    }
+    .menu_wrap div {
+        border-bottom: 1px solid black;
+        width: 48px;
+        height: 36px;
+    }
+    .gnb_aside {
+        width: 320px;
+        height: 22px;
+        position: absolute;
+        top: 350px;
+        left: calc(50% - 160px);
+        display: flex;
+        justify-content: center;
+    }
+    .gnb_aside p {
+        font-family: Galaxie;
+        font-size: 14px;
+        font-weight: 100;
+        line-height: 20px;
+        letter-spacing: -1px;
+    }
+    .gnb_aside a {
+        font-family: HugeGothic-Bold;
+        font-size: 14px;
+        line-height: 22px;
+        margin-left: 6px;
+        padding-top: 2px;
+    }
+    .gnb_aside a:hover {
+        color: #ea178c;
+        cursor: pointer;
+    }
+    .gnb_aside a span {
+        color: #ea178c;
+    }
+
+    /*content*/
+    .logo {
+        width: 60px;
+        font-family: HugeGothic-Bold;
+        font-size: 36px;
+        color: deeppink;
+        position: fixed;
+        top: 60;
+        left: 930px;
+    }
+
+    .home_section {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .home_section_wrap {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .home_section_hello {
+        width: 800px;
+        height: 300px;
+        font-family: HugeGothic-Bold;
+        font-size: 300px;
+        font-weight: 600;
+        text-align: center;
+        display:none;
+    }
+
+    .home_section_hi {
+        width: 800px;
+        height: 300px;
+        font-family: HugeGothic-Bold;
+        font-size: 300px;
+        font-weight: 600;
+        text-align: center;
+        display: block;
+    }
+
+    .home_section_bottom {
+        width: 100%;
+        height: 90px;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .home_section_bottom_text {
+        height: 40px;
+        text-align: center;
+    }
+
+    .home_section_bottom_line {
+        border-left: 1px solid black;
+        width: 1px;
+        height: 50px;
+    }
+}
