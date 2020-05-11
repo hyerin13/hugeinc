@@ -54,6 +54,10 @@ p {font-size:18px; line-height:34px; letter-spacing:-0.27504px;}
 .p_caption {font-family:Galaxie-Book; font-size:18px; line-height:22.6667px; font-weight:400; color:white; letter-spacing:-0.27504px; -webkit-font-smoothing:antialiased;}
 */
 
+body {
+    word-break:keep-all;
+}
+
 /*h버튼*/
 #logo {
     width: 74px;
