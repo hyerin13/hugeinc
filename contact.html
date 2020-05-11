@@ -21,15 +21,48 @@
     <script>
         var header_state = 0;
 
-        function logoClick() {
-            if (header_state == 0) {
-                document.getElementById("home_header").style = "visibility:visible;"
-                header_state = 1;
-            } else {
-                document.getElementById("home_header").style = "visibility:hidden;"
-                header_state = 0;
+            function logoClick() {
+                if (document.body.clientWidth > 767 ) {
+                    if (header_state == 0) {
+                        document.getElementById("home_header").style.height ="440px";
+                        document.getElementById("main").style = "padding-top:440px;"
+
+                        document.getElementById("logo").style.display="none";
+                        document.getElementById("logo_open").style.display="flex";
+
+                        header_state = 1;
+                    }
+                    else {
+                        document.getElementById("home_header").style.height = "0";
+                        document.getElementById("main").style = "padding-top:0px;"
+
+                        document.getElementById("logo").style.display = "flex";
+                        document.getElementById("logo_open").style.display = "none";
+
+                        header_state = 0;
+                    }
+                }
+                else {
+                    if (header_state == 0) {
+                        document.getElementById("home_header").style.height = "80vh";
+                        document.getElementById("main").style = "padding-top:80vh;";
+
+                        document.getElementById("logo").style.display = "none";
+                        document.getElementById("logo_open").style.display = "flex";
+
+                        header_state = 1;
+                    }
+                    else {
+                        document.getElementById("home_header").style.height = "0";
+                        document.getElementById("main").style = "padding-top:0;";
+
+                        document.getElementById("logo").style.display = "flex";
+                        document.getElementById("logo_open").style.display = "none";
+
+                        header_state = 0;
+                    }
+                }
             }
-        }
     </script>
 </head>
 
@@ -38,6 +71,9 @@
     <div id="logo" onclick="logoClick()" class="button_h">
         <div class="button_h_text">H</div>
     </div>
+    <div id="logo_open" onclick="logoClick()">
+        <span>HUGE</span>
+    </div>
 
     <!--h버튼 누르면 열리는 창-->
     <header id="home_header">
@@ -45,27 +81,32 @@
             <ul class="menu_wrap">
                 <li>
                     <a href="index.html">Hello.</a>
+                    <hr>
                     <p>Today at Huge.</p>
                     <div></div>
                 </li>
 
                 <li>
-                    <a href="#home_02">Work.</a>
+                    <a href="work.html">Work.</a>
+                    <hr>
                     <p>What we've made.</p>
                     <div></div>
                 </li>
                 <li>
-                    <a href="#home_03">About.</a>
+                    <a href="about.html">About.</a>
+                    <hr>
                     <p>Who we are.</p>
                     <div></div>
                 </li>
                 <li>
-                    <a href="#home_04">Career.</a>
+                    <a href="career.html">Career.</a>
+                    <hr>
                     <p>Join the team.</p>
                     <div></div>
                 </li>
                 <li>
-                    <a href="#home_05">Contact.</a>
+                    <a href="contact.html">Contact.</a>
+                    <hr>
                     <p>Get in touch.</p>
                     <div></div>
                 </li>
@@ -77,7 +118,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="main">
         <section class="hero hero_about">
             <h1 class="hero_title color_white">Hello.</h1>
         </section>
@@ -289,7 +330,7 @@
         </div>
     </footer>
     <!--footer 끝-->
-
+    </main>
     </body>
 
     </html>

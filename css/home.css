@@ -49,9 +49,6 @@ p {
 }
 
 
-/*content*/
-main {width:100%; transition:padding 0.6s;}
-
 /*home_hello*/
 .home_section {
     width: 100%;
@@ -131,7 +128,6 @@ main {width:100%; transition:padding 0.6s;}
     margin-top:20vh;
     box-sizing:border-box;
     display:flex;
-    z-index:1;
 }
     .home_01_index p {
         font-family:HugeGothic-Bold;
@@ -334,7 +330,7 @@ main {width:100%; transition:padding 0.6s;}
     z-index:0;
 }
 
-@media screen and (max-width:999px) {
+@media screen and (max-width:999px) and (min-width:768px) {
     .home_01_index {
         line-height:1;
     }
