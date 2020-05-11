@@ -3,13 +3,13 @@ body {
     background-color:black;
 }
 .work_01 {
-    width:100%;
+    width:100vw;
     position:relative;
     background-color:black;
     margin-bottom:70px;
 }
 .work_01 video {
-    width:100%;
+    width:100vw;
     height:80vh;
 }
 .work_01 source {
