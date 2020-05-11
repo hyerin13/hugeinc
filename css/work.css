@@ -1,112 +1,21 @@
-/*h 버튼 css*/
-.button_h {
-    width: 74px;
-    height: 74px;
-    background-color: white;
-    position: fixed;
-    left: calc(50vw - 37px);
-    top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.button_h_text {
-    width: 48px;
-    height: 48px;
-    color: #ea178c;
-    font-family: HugeGothic-Bold;
-    font-size: 36px;
-    font-weight: 600;
-    text-align: center;
-    line-height: 54px;
-}
-
-.menu_wrap {
-    width: 1050px;
-    height: 90px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.menu_wrap li {
-    width: 190px;
-    height: 90px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.menu_wrap li a {
-    font-family: HugeGothic-Bold;
-    font-size: 36px;
-    color: black;
-    line-height: 36px;
-}
-
-.menu_wrap li a:hover {
-    color: #ea178c;
-    cursor: pointer;
-}
-
-.menu_wrap li p {
-    font-family: Galaxie;
-    font-size: 14px;
-    font-weight: 100;
-    line-height: 28px;
-    letter-spacing: -1px;
-}
-
-.menu_wrap div {
-    border-bottom: 1px solid black;
-    width: 48px;
-    height: 36px;
-}
-
-.gnb_aside {
-    width: 320px;
-    height: 22px;
-    position: absolute;
-    top: 350px;
-    left: calc(50vw - 160px);
-    display: flex;
-    justify-content: center;
-}
-
-.gnb_aside p {
-    font-family: Galaxie;
-    font-size: 14px;
-    font-weight: 100;
-    line-height: 20px;
-    letter-spacing: -1px;
-}
-
-.gnb_aside a {
-    font-family: HugeGothic-Bold;
-    font-size: 14px;
-    line-height: 22px;
-    margin-left: 6px;
-    padding-top: 2px;
-}
-
-.gnb_aside a:hover {
-    color: #ea178c;
-    cursor: pointer;
-}
-
-.gnb_aside a span {
-    color: #ea178c;
-}
-
 /*page css*/
+body {
+    background-color:black;
+}
 .work_01 {
     width:100%;
+    height:100vh;
     position:relative;
     background-color:black;
+    margin-bottom:70px;
 }
 .work_01 video {
     width:100%;
-    height:100vh;
+    height:100%;
+}
+.work_01 source {
+    background-size: cover;
+    background-position:center;
 }
 .work_01 h2 {
     width:74px;
@@ -116,21 +25,22 @@
     z-index:100;
     position:absolute;
     top:50vh;
-    left:50%;
+    left:calc(50% - 37px);
     font-size:24px;
     line-height:74px;
     text-align:center;
 }
 .work_02 {
-    width: 100%;
-    height: 210px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width:86.9vw;
+    display:block;
     background-color: black;
     color: white;
     font-size: 56px;
+    line-height:70px;
     font-family: Galaxie;
+    margin:0 auto;
+    padding-bottom:70px;
+    text-align:center;
 }
 
 .work_03 {
@@ -224,30 +134,35 @@
 
 .work_04 {
     background-color: #111111;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     padding: 140px 0;
 }
+
 .work_04_wrap {
     width: 74.68354%;
     display: flex;
     box-sizing: border-box;
     margin: auto;
 }
+
 .work_04_left {
     width: 32.20339%
 }
+
     .work_04_left hr {
         width: 47.36842%;
         height: 1px;
         border-top: 1px solid white;
     }
+
     .work_04_left h4 {
         font-family: HugeGothic-Bold;
         font-size: 22px;
         color: white;
         line-height: 60px;
     }
+
 .work_04_right {
     display: flex;
     justify-content: flex-start;
@@ -256,29 +171,34 @@
     align-items:center;
     align-content:flex-start;
 }
+
     .work_04_right li {
         width:15.3846%;
         margin-right:10.25641%;
         margin-bottom:50px;
         box-sizing:border-box;
     }
+
     .work_04_right li:nth-child(4n) {
         margin-right:0;
     }
+
     .work_04_right li img {
         width:100%;
     }
 
 .work_05 {
-    width:100%;
+    width:100vw;
     background-image:url('../img/work/9.jpg');
     background-size:cover;
     position:relative;
 }
+
 .work_05 > div:first-child {
     background-color:rgba(0,0,0,0.7);
     padding:200px 0;
 }
+
 /*
 .work_05::before {
     background-color:rgba(0,0,0,0.7);
@@ -290,11 +210,13 @@
     width:100vw;
     z-index:100;
 }*/
+
 .work_05_wrap {
     width:100%;
     display:flex;
     justify-content:flex-start;
 }
+
 .work_05_left {
     width:18.98734%;
     float:left;
@@ -305,6 +227,7 @@
     margin-right:1.25%;
     padding-bottom:18.98734%;
 }
+
 .work_05_right {
     width:43.03797%;
     margin-right:1.26582%;

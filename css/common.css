@@ -1,3 +1,4 @@
+/*font*/
 @font-face {
     font-family: Galaxie;
     src: url(../font/GalaxieCopernicus-Book.woff);
@@ -11,6 +12,7 @@
 .color_white {
     color:white;
 }
+
 /*타이포그래피*/
 h1, h2, h3, h4, h5, h6 {font-family:HugeGothic-Bold; font-weight:400; -webkit-font-smoothing:antialiased;}
 h4 {font-size:44px; line-height:44px;}
