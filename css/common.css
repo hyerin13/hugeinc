@@ -98,7 +98,6 @@ body {
     font-family: HugeGothic-Bold, Arial, Helvetica, sans-serif;
     font-size: 32px;
     color: #ea178c;
-    
     position: fixed;
     top: 50px;
     left: calc(50% - 37px);
@@ -245,17 +244,25 @@ main {
     padding: 65px 0 80px 0;
     box-sizing: border-box;
 }
-    .home_footer>div {
-        width: 100%;
-        height: 90px;
-        padding: 0 calc(12.5vw + 15px);
-        display: flex;
-        justify-content: space-between;
-        box-sizing: border-box;
-        min-width: 980px;
-    }
+/*
+.home_footer_container {
+    width: 100%;
+    padding: 0 calc(12.5vw + 15px);
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    min-width: 980px;
+}*/
+.home_footer_container {
+    width: 74.68354%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    min-width: 980px;
+    margin: 0 auto;
+    flex-direction: row;
+}
 .footer_content_left {
-    width:45%;
     display: flex;
     align-items: center;
 }
@@ -304,6 +311,7 @@ main {
 }
 
 @media screen and (max-width:999px) {
+    /*header*/
     .menu_wrap {
         width:83.05085%;
         margin:0;
@@ -313,10 +321,12 @@ main {
         font-size: 32px;
         line-height: 32px;
     }
+
+    /*footer*/
     .home_footer {
         padding: 120px 0 100px 0;
     }
-        .home_footer>div {
+        .home_footer_container {
             width: 83.05085%;
             padding: 0;
             justify-content:flex-start;
@@ -334,8 +344,8 @@ main {
 }
 
 @media screen and (max-width:767px) {
-    /*h버튼*/
-    .button_h {
+    /*header*/
+    #logo {
         width: 60px;
         height: 60px;
         top: 25px;
@@ -346,6 +356,20 @@ main {
         height:48px;
         font-size: 28px;
         line-height:50px;
+        text-align:center;
+    }
+
+    #logo_open {
+        width: 71px;
+        height: 71px;
+        top: 25px;
+        left: calc(50% - 35.5px);
+    }
+    #logo_open span {
+        width:71px;
+        height:71px;
+        font-size: 28px;
+        line-height:64px;
         text-align:center;
     }
 
@@ -401,8 +425,9 @@ main {
         width:auto;
         height:auto;
         position: absolute;
-        top: 350px;
-        left: calc(50% - 160px);
+        top:auto;
+        left:calc(50% - 181.5px);
+        bottom:5%;
         display: flex;
         justify-content: center;
     }
@@ -418,8 +443,23 @@ main {
             margin:2px 0 0 0;
             padding:0 0 0 4.8px;
         }
-}
 
-@media screen and (max-width:642px) {
-    /*메뉴 펼쳐지는거 높이 줄어듦 */
+    /*footer*/
+    .home_footer {
+        padding: 50px 0;
+    }
+    .home_footer_container {
+        width: 74.35897%;
+        min-width: auto;
+    }
+    .footer_content_left {
+        width:100%;
+    }
+    .footer_aside {
+        text-align: left;
+        line-height:25.6667px;
+    }
+    .footer_aside span {
+        display:block;
+    }
 }

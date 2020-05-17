@@ -1,107 +1,9 @@
-/*h 버튼 css*/
-.button_h {
-    width: 74px;
-    height: 74px;
-    background-color: white;
-    position: fixed;
-    left: calc(50vw - 37px);
-    top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.button_h_text {
-    width: 48px;
-    height: 48px;
-    color: #ea178c;
-    font-family: HugeGothic-Bold;
-    font-size: 36px;
-    font-weight: 600;
-    text-align: center;
-    line-height: 54px;
-}
-
-.menu_wrap {
-    width: 1050px;
-    height: 90px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.menu_wrap li {
-    width: 190px;
-    height: 90px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.menu_wrap li a {
-    font-family: HugeGothic-Bold;
-    font-size: 36px;
-    color: black;
-    line-height: 36px;
-}
-
-.menu_wrap li a:hover {
-    color: #ea178c;
-    cursor: pointer;
-}
-
-.menu_wrap li p {
-    font-family: Galaxie;
-    font-size: 14px;
-    font-weight: 100;
-    line-height: 28px;
-    letter-spacing: -1px;
-}
-
-.menu_wrap div {
-    border-bottom: 1px solid black;
-    width: 48px;
-    height: 36px;
-}
-
-.gnb_aside {
-    width: 320px;
-    height: 22px;
-    position: absolute;
-    top: 350px;
-    left: calc(50vw - 160px);
-    display: flex;
-    justify-content: center;
-}
-
-.gnb_aside p {
-    font-family: Galaxie;
-    font-size: 14px;
-    font-weight: 100;
-    line-height: 20px;
-    letter-spacing: -1px;
-}
-
-.gnb_aside a {
-    font-family: HugeGothic-Bold;
-    font-size: 14px;
-    line-height: 22px;
-    margin-left: 6px;
-    padding-top: 2px;
-}
-
-.gnb_aside a:hover {
-    color: #ea178c;
-    cursor: pointer;
-}
-
-.gnb_aside a span {
-    color: #ea178c;
-}
-
 /*common.css 요소*/
 .color_white {
     color: white;
 }
+
+/*about_hero*/
 .hero {
     width: 100vw;
     height: 80vh;
@@ -110,12 +12,9 @@
     padding: 140px 0 60px;
     box-sizing: border-box;
 }
-
-/*about_hero*/
 .hero_about {
     background-image: url('../img/contact/RoyalPalms-16__2__crop__1___1___2_.jpg');
 }
-
 .hero_title {
     width: 74.68354%;
     height: calc(80vh - 200px);
@@ -127,19 +26,24 @@
 
 /*hello*/
 .hello {
-    width: 100%;
+    width: 100vw;
     background-color: black;
-    padding: 140px 0;
     box-sizing: border-box;
 }
 .hello_container {
     width: 74.68354%;
+    padding: 140px 0 200px 0;
     margin: 0 auto;
     display: flex;
 }
 .section_subtitle {
-    min-width: 32.20339%;
-    padding-top: 14px;
+    width: 32.20339%;
+    margin-bottom:50px;
+    font-family:HugeGothic-Bold;
+    font-size:22px;
+    line-height:0.72727;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
 }
 .section_subtitle_rule_white {
     width: 47.36842%;
@@ -151,10 +55,10 @@
     margin-left: 1.69492%;
 }
     .hello_title {
-        margin-bottom: 70px;
-    }
-    .hello_text {
-        padding-bottom: 25px;
+        font-family:Galaxie;
+        font-size:56px;
+        line-height:1.25;
+        letter-spacing:-4px;
     }
 .hello_content ul {
     width:100%;
@@ -165,42 +69,74 @@
 .hello_content li {
     width:48.71795%;
     margin-top:100px;
+    padding-right:1.26582%;
 }
-/*.hello_content p:first-child {
+.hello_subtitle {
+    font-family:Galaxie;
+    -webkit-font-smoothing:antialiased;
+    font-size:18px;
+    letter-spacing:-0.27504px;
+    line-height:34px;
+    width:100%;
     margin-bottom:40px;
-}*/
+}
+.hello_content li p {
+    font-size:18px;
+    letter-spacing:-0.27504px;
+    line-height:34px;
+}
 
 /*지역*/
 .work_03 {
     width: 100vw;
     background-color: black;
-    padding-bottom: 95px;
+    padding-bottom:100px;
 }
-
 .work_03_ul {
-    width: 90vw;
+    width:89.87342%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
 }
-
 .work_03_ul li {
-    width: 30vw;
-    height: 30vw;
-    background-size: cover;
+    width:33.33333%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    padding: 0 0 28px 40px;
-    font-size: 44px;
-    font-family: HugeGothic-Bold;
+    padding:115px 70px 30px 70px;
     color: black;
     background-color:white;
     border:1px solid black;
+    position:relative;
 }
-
-.work_03_ul li:nth-child(1) {
-    background-image: url('');
+#office_card h4 {
+    font-size:44px;
+    line-height:1.09091;
+    margin-bottom:50px;
+}
+#office_card h5 {
+    font-size:24px;
+    line-height:1.25;
+    margin-bottom:20px;
+}
+#office_card p {
+    font-size:18px;
+    letter-spacing:-0.27504px;
+    line-height:1.88889;
+}
+#office_card div {
+    font-family:Galaxie;
+    -webkit-font-smoothing:antialiased;
+    font-size:18px;
+    letter-spacing:-0.27504px;
+    line-height:1.88889;
+    min-height:100px;
+}
+.office_open_state {
+    width:35px;
+    height:35px;
+    position:absolute;
+    right:30px;
+    bottom:30px;
 }
 
 /*magenta*/
@@ -208,50 +144,250 @@
     width: 100vw;
     background-image: url('../img/contact/frame_0_delay-0.2s.jpg');
     background-size: cover;
+    background-position:center;
     position: relative;
 }
-
-.work_05>div:first-child {
+.work_05_screen {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 200px 0;
 }
-
 .work_05_wrap {
     width: 100%;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
 }
-
 .work_05_left {
     width: 18.98734%;
     float: left;
     display: inline-table;
-    background-image: url('../img/magenta-hero.gif');
+    background-image: url('../img/contact/magenta-hero.gif');
     background-size: cover;
     margin-left: 12.65823%;
     margin-right: 1.25%;
     padding-bottom: 18.98734%;
 }
-
 .work_05_right {
     width: 43.03797%;
-    margin-right: 1.26582%;
     margin-left: 5.06329%;
+    margin-right: 1.26582%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: white;
 }
+    .work_05_right h2 {
+        font-size:80px;
+        line-height: 1.05;
+        letter-spacing: -2px;
+    }
+    .work_05_right p {
+        font-family: Galaxie;
+        font-size: 18px;
+        line-height:1.88889;
+        letter-spacing:-0.27504px;
+    }
 
-.work_05_right h2 {
-    font-size: 135px;
-    line-height: 140px;
-    letter-spacing: -3px;
+@media screen and (max-width:999px) {
+    /*about_hero*/
+    .hero_title {
+        width:83.05085%;
+        font-size:104px;
+        line-height:0.875;
+    }
+
+    /*hello*/
+    .section_subtitle {
+        width:48.97959%;
+        font-size:16px;
+        line-height:1;
+    }
+    .section_subtitle_rule_white {
+        width:37.5%;
+        margin-right:auto;
+    }
+    .hello_title {
+        font-size:42px;
+        line-height:1.28571;
+        letter-spacing:-1px;
+    }
+    .hello_content li {
+        width:100%;
+        margin-top:60px;
+        padding-right:1.26582%;
+    }
+    .hello_subtitle {
+        margin-bottom:20px;
+    }
+    .hello_content li p {
+        font-size:18px;
+        letter-spacing:-0.27504px;
+        line-height:34px;
+    }
+
+    /*지역*/
+    .work_03 {
+        padding-bottom:80px;
+    }
+    .work_03_ul {
+        width:83.05085%;
+    }
+    .work_03_ul li {
+        width:50%;
+        min-height:44vh;
+        padding:80px 50px 10px 50px;
+    }
+    #office_card h4 {
+        font-size:42px;
+        line-height:1.14286;
+        margin-bottom:30px;
+    }
+    #office_card h5 {
+        font-size:21px;
+        line-height:1.33333;
+        margin-bottom:15px;
+    }
+    #office_card div {
+        font-family:Galaxie;
+        -webkit-font-smoothing:antialiased;
+        font-size:18px;
+        letter-spacing:-0.27504px;
+        line-height:1.88889;
+        min-height:100px;
+    }
+    .office_open_state {
+        width:25px;
+        height:25px;
+        position:absolute;
+    }
+
+    /*magenta*/
+    .work_05_screen {
+        padding: 160px 0;
+    }
+    .work_05_left {
+        width:25.42373%;
+        margin-left:16.94915%;
+        margin-right:1.66667%;
+        padding-bottom: 25.42373%;
+    }
+    .work_05_right {
+        width:40.67797%;
+        margin-left:6.77966%;
+        margin-right:1.69492%;
+    }
+        .work_05_right h2 {
+            font-size:72px;
+            line-height:1.04167;
+            letter-spacing: -2px;
+        }
 }
 
-.work_05_right p {
-    font-family: Galaxie;
-    font-size: 24px;
-    line-height: 36px;
-    letter-spacing: -0.5px;
+@media screen and (max-width:767px) {
+    /*about_hero*/
+    .hero {
+        height: 70vh;
+        padding: 120px 0 60px;
+    }
+    .hero_title {
+        width:74.35897%;
+    }
+
+    /*hello*/
+    .hello_container {
+        width:74.35897%;
+        padding: 60px 0 110px 0;
+        flex-direction:column;
+    }
+    .section_subtitle {
+        width:82.75862%;
+        font-size:14px;
+        line-height:1.42857;
+    }
+    .section_subtitle_rule_white {
+        width:37.5%;
+    }
+    .hello_content {
+        width:100%;
+        margin-left:0;
+    }
+        .hello_title {
+            font-size:30px;
+            line-height:1.4;
+            letter-spacing:-1px;
+        }
+    .hello_content li {
+        width:100%;
+        margin-top:60px;
+        padding-right:1.26582%;
+    }
+
+    /*지역*/
+    .work_03 {
+        width: 100vw;
+        background-color: black;
+        padding:0 25px 80px 25px;
+    }
+    .work_03_ul {
+        width:100%;
+        margin: 0;
+    }
+    .work_03_ul li {
+        width:100%;
+        max-height:57vh;
+        padding:40px 25px;
+    }
+    #office_card h4 {
+        font-size:32px;
+        line-height:1.5;
+        margin-bottom:30px;
+    }
+    #office_card h5 {
+        font-size:19px;
+        line-height:1.36842;
+        margin-bottom:15px;
+    }
+    #office_card div {
+        min-height:auto;
+        margin-bottom:30px;
+    }
+    .office_open_state {
+        width:25px;
+        height:25px;
+        position:absolute;
+        right:30px;
+        bottom:30px;
+    }
+
+    /*magenta*/
+    .work_05_screen {
+        padding:80px 0;
+    }
+    .work_05_wrap {
+        display:flex;
+        flex-direction: column;
+        align-items:flex-start;
+    }
+    .work_05_left {
+        width:35.89744%;
+        margin-left:12.82051%;
+        margin-right:2.5641%;
+        padding-bottom:35.89744%;
+    }
+    .work_05_right {
+        width:74.35897%;
+        margin-right:2.5641%;
+        margin-left:12.82051%;
+        margin-top:50px;
+    }
+        .work_05_right h2 {
+            font-size:40px;
+            line-height:1.1;
+            letter-spacing:-1px;
+        }
+        .work_05_right p {
+            font-size:18px;
+            line-height:1.88889;
+            letter-spacing:-0.27504px;
+        }
 }

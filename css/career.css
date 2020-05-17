@@ -1,108 +1,4 @@
-/*h 버튼 css*/
-.button_h {
-    width: 74px;
-    height: 74px;
-    background-color: white;
-    position: fixed;
-    left: calc(50vw - 37px);
-    top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.button_h_text {
-    width: 48px;
-    height: 48px;
-    color: #ea178c;
-    font-family: HugeGothic-Bold;
-    font-size: 36px;
-    font-weight: 600;
-    text-align: center;
-    line-height: 54px;
-}
-
-.menu_wrap {
-    width: 1050px;
-    height: 90px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.menu_wrap li {
-    width: 190px;
-    height: 90px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.menu_wrap li a {
-    font-family: HugeGothic-Bold;
-    font-size: 36px;
-    color: black;
-    line-height: 36px;
-}
-
-.menu_wrap li a:hover {
-    color: #ea178c;
-    cursor: pointer;
-}
-
-.menu_wrap li p {
-    font-family: Galaxie;
-    font-size: 14px;
-    font-weight: 100;
-    line-height: 28px;
-    letter-spacing: -1px;
-}
-
-.menu_wrap div {
-    border-bottom: 1px solid black;
-    width: 48px;
-    height: 36px;
-}
-
-.gnb_aside {
-    width: 320px;
-    height: 22px;
-    position: absolute;
-    top: 350px;
-    left: calc(50vw - 160px);
-    display: flex;
-    justify-content: center;
-}
-
-.gnb_aside p {
-    font-family: Galaxie;
-    font-size: 14px;
-    font-weight: 100;
-    line-height: 20px;
-    letter-spacing: -1px;
-}
-
-.gnb_aside a {
-    font-family: HugeGothic-Bold;
-    font-size: 14px;
-    line-height: 22px;
-    margin-left: 6px;
-    padding-top: 2px;
-}
-
-.gnb_aside a:hover {
-    color: #ea178c;
-    cursor: pointer;
-}
-
-.gnb_aside a span {
-    color: #ea178c;
-}
-
-/*common.css 요소*/
-.color_white {
-    color:white;
-}
-
+/*home*/
 .hero_video {
     width:100vw;
     height:80vh;
@@ -119,8 +15,23 @@
     bottom:0;
     position:absolute;
     background-size:cover;
+    background-position:center;
 }
-/*careers_img css*/
+.hero_video h2 {
+    width:74px;
+    height:74px;
+    background-color:rgba(234, 23, 140, 0.6);
+    color:white;
+    z-index:100;
+    position:absolute;
+    top:calc(40vh - 37px);
+    left:calc(50vw - 37px);
+    font-size:22px;
+    line-height:78px;
+    text-align:center;
+}
+
+/*careers_img
 .careers_home {
     width:100vw;
     height:684.797px;
@@ -147,17 +58,17 @@
         line-height:74px;
         padding-left:30px;
     }
+    */
 
 /*our commitment*/
 .our_commitment {
     width:100%;
     background-color:white;
-    padding:150px 0;
     box-sizing:border-box;
 }
 .our_commitment_container {
-    width:74.68354%;
-    margin:0 auto;
+    width:auto;
+    padding:150px 12.7119%;
 }
 .our_commitment_content {
     width:100%;
@@ -167,15 +78,15 @@
         width:100%;
         margin-bottom:20px;
         font-size:56px;
-        line-height:90.0003px;
-        letter-spacing:-3px;
+        line-height:1.25;
+        letter-spacing:-4px;
     }
     .our_commitment_text {
         width:100%;
         margin-bottom:60px;
         font-size:18px;
-        line-height:36px;
-        letter-spacing:-0.5px;
+        line-height:1.88889;
+        letter-spacing:-0.27504px;
     }
 .our_commitment_button {
     background-color:black;
@@ -184,20 +95,18 @@
     font-family:HugeGothic-Bold;
     font-size:24px;
     font-weight:400;
-    height:96px;
-    line-height:30px;
+    line-height:1.25;
     padding:30px 45px;
 }
 .our_commitment_button:hover {
     opacity:0.5;
-    padding:10px 45px 50px;
 }
 
 /*Why Huge?*/
 .why_huge {
     width:100%;
     background-color:white;
-    padding:140px 0;
+    padding:70px 0 140px 0;
     box-sizing:border-box;
 }
 .why_huge_container {
@@ -206,12 +115,18 @@
     display:flex;
 }
 .section_subtitle {
-    min-width:32.20339%;
-    padding-top:14px;
+    width:32.20339%;
+    margin:14px 0 50px 0;
+    font-family:HugeGothic-Bold;
+    font-size:22px;
+    font-weight:400;
+    line-height:0.72727;
+    -webkit-font-smoothing:antialiased;
 }
 .section_subtitle_rule_black {
     width:47.36842%;
     margin-bottom:20px;
+    margin-right:auto;
     border-top:1px solid black;
 }
 .why_huge_content {
@@ -220,13 +135,22 @@
 }
 .why_huge_title {
     margin-bottom:70px;
-    font-size:74px;
+    font-family:Galaxie;
+    font-size:56px;
+    line-height:1.25;
+    letter-spacing:-4px;
 }
-.why_huge_text {
+.why_huge_text_1 {
     padding-bottom:25px;
-    font-size:24px;
-    letter-spacing:-0.5px;
-    line-height:36px;
+    font-size:18px;
+    letter-spacing:-0.27504px;
+    line-height:34px;
+}
+.why_huge_text_2 {
+    padding:25px 0;
+    font-size:18px;
+    letter-spacing:-0.27504px;
+    line-height:34px;
 }
 
 /*5 ways*/
@@ -241,27 +165,26 @@
     margin:0 auto;
     display:flex;
 }
-.section_subtitle_rule_white {
-    width: 47.36842%;
-    margin-bottom: 20px;
-    border-top:1px solid white;
-}
 .section_subtitle_nopadding {
     width: 32.20339%;
     margin-bottom:50px;
-}
-.section_subtitle_nopadding h6 {
     font-family: HugeGothic-Bold;
     font-size: 22px;
     color: white;
-    line-height: 60px;
+    line-height:0.72727;
+}
+.section_subtitle_rule_white {
+    width: 47.36842%;
+    margin-bottom: 20px;
+    margin-right:auto;
+    border-top:1px solid white;
 }
 .ways_content {
     width: 66.10169%;
+    margin-left: 1.69492%;
 }
 .ways_content li {
     width:100%;
-    margin-right:10.25641%;
     display:flex;
     justify-content:space-between;
     margin-bottom:80px;
@@ -274,32 +197,33 @@
         box-sizing:border-box;
         font-family:HugeGothic-Bold;
         font-weight:400;
-        font-size:135px;
-        line-height:140px;
-        letter-spacing:-3px;
+        font-size:80px;
+        line-height:1.05;
+        letter-spacing:-2px;
     }
     .ways_content_left p {
         font-family:Galaxie;
-        font-size:24px;
-        line-height:36px;
-        letter-spacing:-0.5px;
+        font-size:18px;
+        line-height:1.88889;
+        letter-spacing:-0.27504px;
     } 
 .ways_content_right {
     width:9.60938px;
     font-family:Galaxie;
-    font-size:24px;
-    line-height:36px;
-    letter-spacing:-0.5px;
+    font-size:18px;
+    line-height:1.88889;
+    letter-spacing:-0.27504px;
 }
 
 /*magenta*/
 .work_05 {
     width:100vw;
-    background-image:url('../img/careers/frame_00_delay-0.1s.jpg');
+    background-image:url('../img/career/Balancing_Careers_in_Art_and_Design_.jpg');
     background-size:cover;
+    background-position:center;
     position:relative;
 }
-.work_05 > div:first-child {
+.work_05_screen {
     background-color:rgba(0,0,0,0.7);
     padding:200px 0;
 }
@@ -312,7 +236,7 @@
     width:18.98734%;
     float:left;
     display: inline-table;
-    background-image:url('../img/magenta-hero.gif');
+    background-image:url('../img/career/magenta-hero.gif');
     background-size:cover;
     margin-left:12.65823%;
     margin-right:1.25%;
@@ -320,21 +244,303 @@
 }
 .work_05_right {
     width:43.03797%;
-    margin-right:1.26582%;
     margin-left:5.06329%;
+    margin-right:1.26582%;
     display:flex;
     flex-direction:column;
     justify-content:center;
     color:white;
 }
     .work_05_right h2 {
-        font-size:135px;
-        line-height:140px;
-        letter-spacing:-3px;
+        font-size:80px;
+        line-height:1.05;
+        letter-spacing:-2px;
     }
     .work_05_right p {
         font-family:Galaxie;
-        font-size:24px;
-        line-height:36px;
-        letter-spacing:-0.5px;
+        font-size:18px;
+        line-height:1.88889;
+        letter-spacing:-0.27504px;
     }
+
+@media screen and (max-width:999px) {
+    /*home*/
+    .hero_video {
+        width:100vw;
+        height:80vh;
+        position:relative;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .hero_video video {
+        min-width:100vw;
+        min-height:80vh;
+        border:none;
+        right:0;
+        bottom:0;
+        position:absolute;
+        background-size:cover;
+        background-position:center;
+    }
+
+    /*our commitment*/
+    .our_commitment_container {
+        padding:80px 16.94915%;
+    }
+    .our_commitment_title {
+        font-size:42px;
+        line-height:1.28571;
+        letter-spacing:-1px;
+    }
+    .our_commitment_text {
+        font-size:18px;
+        line-height:1.88889;
+        letter-spacing:-0.27504px;
+    }
+    .our_commitment_button {
+        font-size:21px;
+        line-height:1.33333;
+    }
+
+    /*Why Huge?*/
+    .why_huge {
+        padding:0;
+    }
+    .why_huge_container {
+        width:83.05085%;
+        margin:0 auto;
+        padding:70px 0 100px 0;
+        flex-direction:column;
+    }
+    .section_subtitle {
+        width:48.97959%;
+        margin-bottom:50px;
+        font-size:16px;
+        line-height:1;
+    }
+    .section_subtitle_rule_black {
+        width:37.5%;
+        margin-right:auto;
+    }
+    .why_huge_content {
+        width:100%;
+        margin-left:0;
+    }
+    .why_huge_title {
+        font-size:42px;
+        line-height:1.28571;
+        letter-spacing:-1px;
+    }
+    .why_huge_text_1 {
+        font-size:18px;
+        letter-spacing:-0.27504px;
+        line-height:34px;
+    }
+    .why_huge_text_2 {
+        font-size:18px;
+        letter-spacing:-0.27504px;
+        line-height:34px;
+    }
+
+    /*5 ways*/
+    .section_subtitle_nopadding {
+        width:23.72881%;
+        font-size: 16px;
+        line-height: 1;
+    }
+    .section_subtitle_rule_white {
+        width:37.5%;
+        margin-right:auto;
+    }
+    .ways_content {
+       margin-left:5.08475%;
+    }
+    .ways_content_left h2 {
+        font-size:72px;
+        line-height:1.04167;
+        letter-spacing:-2px;
+    }
+    .ways_content_left p {
+        font-size:18px;
+        line-height:1.88889;
+        letter-spacing:-0.27504px;
+    } 
+    .ways_content_right {
+        font-size:18px;
+        line-height:1.88889;
+        letter-spacing:-0.27504px;
+    }
+
+    /*magenta*/
+    .work_05_screen {
+        padding:160px 0;
+    }
+    .work_05_left {
+        width:25.42373%;
+        margin-left:16.94915%;
+        margin-right:1.66667%;
+        padding-bottom:25.42373%;
+    }
+    .work_05_right {
+        width:40.67797%;
+        margin-right:1.69492%;
+        margin-left:6.77966%;
+    }
+        .work_05_right h2 {
+            font-size:72px;
+            line-height:1.04167;
+            letter-spacing:-2px;
+        }
+        .work_05_right p {
+            font-size:18px;
+            line-height:1.88889;
+            letter-spacing:-0.27504px;
+        }
+}
+
+@media screen and (max-width:767px) {
+    /*home*/
+    .hero_video {
+        width:100vw;
+        height:70vh;
+        position:relative;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .hero_video video {
+        min-width:100vw;
+        min-height:70vh;
+        border:none;
+        right:0;
+        bottom:0;
+        position:absolute;
+        background-size:cover;
+        background-position:center;
+    }
+    .hero_video h2 {
+        width:60px;
+        height:60px;
+        top:calc(35vh - 30px);
+        left:calc(50vw - 30px);
+        font-size:22px;
+        line-height:64px;
+    }
+
+    /*our commitment*/
+    .our_commitment_container {
+        width:74.35897%;
+        padding:80px 0;
+        margin:0 auto;
+    }
+    .our_commitment_content {
+        width:100%;
+        display:block;
+    }
+        .our_commitment_title {
+            font-size:30px;
+            line-height:1.4;
+            letter-spacing:-1px;
+        }
+    .our_commitment_button {
+        font-size:19px;
+        line-height:1.36842;
+    }
+
+    /*Why Huge?*/
+    .why_huge {
+        padding:70px 0 60px 0;
+    }
+    .why_huge_container {
+        width:74.35897%;
+    }
+    .section_subtitle {
+        width:82.75862%;
+        margin:0 0 50px 0;
+        font-size:14px;
+        line-height:1.42857;
+    }
+    .section_subtitle_rule_black {
+        width:37.5%;
+        margin-right:auto;
+    }
+    .why_huge_content {
+        width:100%;
+        margin-left:0;
+    }
+    .why_huge_title {
+        font-size:30px;
+        line-height:1.4;
+        letter-spacing:-1px;
+    }
+
+    /*5 ways*/
+    .ways {
+        padding:80px 0;
+    }
+    .ways_container {
+        width:74.35897%;
+        flex-direction:column;
+    }
+    .section_subtitle_nopadding {
+        width:82.75862%;
+        font-size:14px;
+        line-height:1.42857;
+    }
+    .section_subtitle_rule_white {
+        width:37.5%;
+    }
+    .ways_content {
+        width:100%;
+        margin-left:0;
+    }
+    .ways_content li {
+        width:100%;
+        display:flex;
+        justify-content:space-between;
+        margin-bottom:80px;
+    }
+    .ways_content_left {
+        width:100%;
+    }
+        .ways_content_left h2 {
+            font-size:40px;
+            line-height:1.1;
+            letter-spacing:-1px;
+        }
+    .ways_content_right {
+        display:none;
+    }
+
+    /*magenta*/
+    .work_05_screen {
+        padding:80px 0;
+    }
+    .work_05_wrap {
+        display:flex;
+        flex-direction: column;
+    }
+    .work_05_left {
+        width:35.89744%;
+        margin-left:12.82051%;
+        margin-right:2.5641%;
+        padding-bottom:35.89744%;
+    }
+    .work_05_right {
+        width:74.35897%;
+        margin-right:2.5641%;
+        margin-left:12.82051%;
+        margin-top:50px;
+    }
+        .work_05_right h2 {
+            font-size:40px;
+            line-height:1.1;
+            letter-spacing:-1px;
+        }
+        .work_05_right p {
+            font-size:18px;
+            line-height:1.88889;
+            letter-spacing:-0.27504px;
+        }
+}
